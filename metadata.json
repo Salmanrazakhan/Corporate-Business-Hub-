@@ -1,0 +1,6 @@
+{
+  "name": "Corporate Business Hub - Downtown Dubai Ready Offices",
+  "description": "Move-in ready private and serviced offices in an A-grade building steps from Burj Khalifa at 1601, 48 Burj Gate, Sofitel Downtown Dubai, Dubai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

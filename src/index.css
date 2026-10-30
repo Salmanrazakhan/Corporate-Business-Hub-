@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-gold-50: #fbf8f0;
+  --color-gold-100: #f5eedc;
+  --color-gold-200: #ecdcbb;
+  --color-gold-300: #dec493;
+  --color-gold-400: #cda869;
+  --color-gold-500: #c09449;
+  --color-gold-600: #a97c38;
+  --color-gold-700: #885f2e;
+  --color-gold-800: #6f4d29;
+  --color-gold-900: #5c4025;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F2;
+  color: #1F1914;
+}
+
+h1, h2, h3, .font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+/* Custom fine luxury borders & subtle glass */
+.border-subtle {
+  border-color: rgba(31, 25, 20, 0.08);
+}
+
+.border-subtle-dark {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Card hover zoom with gold accent expansion */
+.office-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.office-card img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.office-card:hover img {
+  transform: scale(1.06);
+}
+
+.office-card .gold-line {
+  transition: width 0.4s ease-out, background-color 0.4s ease-out;
+}
+
+.office-card:hover .gold-line {
+  width: 48px;
+  background-color: #C09449;
+}
